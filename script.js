@@ -2,14 +2,20 @@
 
 const textArea = document.getElementById("inputText");
 const button = document.querySelector("button");
+const result = document.getElementById("result");
 
 function checkVowels() {
-	const text = textArea.value.toLoweCase();
-	let vowelCount = 0;
+	const text = textArea.value.toLowerCase();
 
+	let vowelCount = 0;
 	for (let i = 0; i < text.length; i++) {
 		let char = text[i];
+		if (isVowel(char)) {
+			vowelCount++;
+		}
 	}
+
+	result.textContent = `Total Vowel(s): ${vowelCount}`;
 }
 
 function isVowel(char) {
