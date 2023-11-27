@@ -2,7 +2,7 @@
 
 Vowel counter web application.
 
-Live site url:
+Live site url: https://quiel-vowel-counter.netlify.app/
 
 ## Table of contents
 
